@@ -1,0 +1,4 @@
+.DS_Store
+.babelrc
+node_modules/
+dist/
