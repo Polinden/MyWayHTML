@@ -42,7 +42,7 @@ const config = {
         loader: "babel-loader",
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(sass|css)$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {

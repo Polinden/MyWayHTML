@@ -3,11 +3,12 @@
 
 ## INSTALL
 ```
-npm install --save webpack
-npm i --save-dev html-webpack-plugin@4
-npm install --save-dev style-loader
-npm install --save-dev css-loader
-npm install --save compile-sass
+npm i webpack -D
+npm i html-webpack-plugin@4 -D
+npm i style-loader -D
+npm i css-loader -D
+npm i compile-sass -D
+npm i bootstrap@5.1.3 -D
 ```
 
 
@@ -67,7 +68,7 @@ const path = require('path');
 
   rules: [{
   ....
-        test: /\.s[ac]ss$/i,
+        test: /\.(sass|css)$/i,
         use: ["style-loader", "css-loader", "sass-loader"],  //<---- SASS preprocess
       },
   ....
@@ -77,7 +78,12 @@ const path = require('path');
 
 ## ADD TO SRC/main1.js
 ```
-import "./index1.sass";
+import { Tooltip, Toast, Popover } from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+console.log("Ready to bootstrap!");
+
+import './index1.sass'
+
 ```
 
 
@@ -96,6 +102,11 @@ https://docs.emmet.io/cheat-sheet/
 
 
 
+## COLORS  HINTS
+```
+https://colorhunt.co
+
+```
 
 
 
